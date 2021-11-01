@@ -2,6 +2,18 @@ from random import shuffle
 
 
 def scramble(word):
+    """
+       scrambles a word when the length is greater than 5
+
+       Args:
+           word (string): word that is to be scrambled.
+
+       Returns:
+           str: word that is scrambled
+
+       Raises:
+           KeyError: Raises an exception.
+       """
     if len(word) <= 5:
         return word
     first_two_letters = word[0:2]

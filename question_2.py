@@ -1,4 +1,13 @@
 def seconds_to_time(time):
+    """
+       converts time into hh:mm:ss format
+
+       Args:
+           time (int): time in seconds
+
+       Returns:
+           str:The time in hh:mm:ss
+       """
     if time > 359999 or time<0:
         return None
     seconds_in_hour = 3600
